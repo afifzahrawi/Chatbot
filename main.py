@@ -40,7 +40,7 @@ def chat_bot():
 
             if new_answer.lower() != "skip":
                 knowledge_base["questions"].append({"question": user_input, "answer": new_answer})
-                save_knowledge_base('knowledge_based.json', knowledge_base)
+                save_knowledge_base('knowledge_base.json', knowledge_base)
                 print('Bot: Thank you! I learnt a new response!')
 
 if __name__ == '__main__':
